@@ -1,0 +1,91 @@
+4.0
+upgrade to laravel 7
+new LARASHIP features
+-------------------------------------
+3.1.1
+=================
+Fix Admin
+
+3.1
+===================
+remove some xss
+
+3.0
+============================
+php 7.4 support
+
+
+---------------------------------------
+2.8.1
+Fix Constructor route method issue
+----------------------------
+2.8
+Fix issue with Shipping & Transaction
+
+
+----------------------------
+2.7
+Marketplace API
+----------------------------------
+2.6
+Marketplace API
+----------------------------------
+2.4
+Fix Error  View [shop.partials.tabs_items] not found
+add parent category field to category form
+----------------------------------
+2.3
+-----------------------------------
+support category multiple level
+-----------------------------------
+2.1
+Add platform to module.json for laraship installer
+------------------------------------
+2.0
+Laravel 6 Upgrade
+------------------------------------
+
+1.5.2
+---------------------------
+Add SCA support for stripe
+
+
+
+1.5
+-------------------------------
+Add Database Cart
+Add Price Per Customer classification
+
+1.4.6
+
+Add Online Refund Functionality
+
+-----------------------
+1.4.5
+
+Add Order Filter
+
+-------------------------------
+
+1.4.4
+Edit validation in wizard
+
+1.4.3
+Checkout Guest
+
+1.4.2
+Add permission Brand
+
+1.2.3
+-------------------------------
+Fix Bugs on Discount and Tax class calculations
+
+1.2.1
+-------------------------------
+Add Category Policy
+
+1.2
+- fix installer and dependencies
+-------------------------------------
+1.1
+- fix addContentAccess function

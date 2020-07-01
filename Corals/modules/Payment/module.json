@@ -1,0 +1,24 @@
+{
+  "code": "corals-payment",
+  "name": "Payment Gateways Core",
+  "author": "Corals",
+  "type": "module",
+  "description": "Payment Gateways Core",
+  "namespace": "Corals\\Modules\\Payment",
+  "provider": "PaymentServiceProvider",
+  "version": "4.0",
+  "load_order": "500",
+  "folder": "Payment",
+  "autoload": "psr-4",
+  "icon": "fa fa-money",
+  "require": {
+    "corals-foundation": "^5.0",
+    "corals-settings": "^4.0"
+  },
+  "supported_platforms": [
+    "Ecommerce",
+    "Marketplace",
+    "Classified",
+    "Subscription"
+  ]
+}

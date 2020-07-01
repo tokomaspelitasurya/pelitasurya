@@ -1,0 +1,6 @@
+{
+  "require": {
+    "cviebrock/eloquent-sluggable": "^7.0",
+    "nztim/mailchimp": "^3.7"
+  }
+}

@@ -1,0 +1,6 @@
+1.6
+Add platform to module.json for laraship installer
+------------------------------------
+1.5
+- Upgrade Paypal Webooks Handlers
+------------------------------------------

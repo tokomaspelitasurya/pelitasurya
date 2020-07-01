@@ -1,0 +1,7 @@
+{
+  "require": {
+    "laravel/socialite": "~4.0",
+    "nexmo/client": "~2.0"
+
+  }
+}
