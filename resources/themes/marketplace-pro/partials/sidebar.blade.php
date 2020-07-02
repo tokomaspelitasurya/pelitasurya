@@ -1,1 +1,0 @@
-<h3>@lang('corals-marketplace-pro::labels.partial.sidebar')</h3>
