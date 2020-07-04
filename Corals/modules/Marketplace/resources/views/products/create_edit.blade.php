@@ -38,10 +38,10 @@
                         {!! CoralsForm::select('type','Marketplace::attributes.product.type',trans('Marketplace::attributes.product.type_option') ,true, null,['class'=>'']) !!}
                         <div id="simple_product_attributes" class="hidden">
                             {!! CoralsForm::text('code','Marketplace::attributes.product.sku_code',true,$product->exists? $sku->code:'' ,[] ) !!}
-                            {!! CoralsForm::number('regular_price','Marketplace::attributes.product.regular_price',true,$product->exists? $sku->regular_price:null,['step'=>0.01,'min'=>0,'max'=>999999,'left_addon'=>'<i class="'.$sku->currency_icon.'"></i>']) !!}
-                            {!! CoralsForm::number('sale_price','Marketplace::attributes.product.sale_price',false,$product->exists? $sku->sale_price:null,['step'=>0.01,'min'=>0,'max'=>999999,'left_addon'=>'<i class="'.$sku->currency_icon.'"></i>']) !!}
+                            {!! CoralsForm::number('regular_price','Marketplace::attributes.product.regular_price',true,$product->exists? $sku->regular_price:null,['step'=>0.01,'min'=>0,'max'=>99999999999,'left_addon'=>'<i class="'.$sku->currency_icon.'"></i>']) !!}
+                            {!! CoralsForm::number('sale_price','Marketplace::attributes.product.sale_price',false,$product->exists? $sku->sale_price:null,['step'=>0.01,'min'=>0,'max'=>99999999999,'left_addon'=>'<i class="'.$sku->currency_icon.'"></i>']) !!}
                             {!! CoralsForm::number('allowed_quantity','Marketplace::attributes.product.allowed_quantity', false,$sku->exists?$sku->allowed_quantity:0,
-                            ['step'=>1,'min'=>0,'max'=>999999, 'help_text'=>'Marketplace::attributes.product.help']) !!}
+                            ['step'=>1,'min'=>0,'max'=>99999999999, 'help_text'=>'Marketplace::attributes.product.help']) !!}
                             {!! CoralsForm::select('inventory','Marketplace::attributes.product.inventory',  get_array_key_translation(config('marketplace.models.sku.inventory_options')),true,$sku->inventory) !!}
                             <div id="inventory_value_wrapper"></div>
                         </div>
@@ -252,7 +252,7 @@
             } else if (value === 'finite') {
                 input = '{{ CoralsForm::number('inventory_value','Inventory Value',false,$sku->inventory_value?$sku->inventory_value:null,
                                     ['help_text'=>'',
-                                    'step'=>1,'min'=>0,'max'=>999999])  }}';
+                                    'step'=>1,'min'=>0,'max'=>99999999999])  }}';
             } else {
                 input = '';
             }
