@@ -7,7 +7,7 @@ return [
     ],
     'bank' => [
         'make_payment_directly' => ' Make payment directly into our bank account, please use the following as payment reference, your
-                    subscription will be activated once payment is receieved<br>
+                    transaction will be activated once payment is receieved. this transaction will expired in <b>1 Hour</b>.<br>
                     <span>Reference Number : <b>:arg</b></span>',
 
         'account_information' => 'Bank Account Information',
