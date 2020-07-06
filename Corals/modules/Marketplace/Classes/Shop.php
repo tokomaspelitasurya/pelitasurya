@@ -515,7 +515,7 @@ class Shop
      * @param int $take
      * @return array
      */
-    public function getTopSellers($take = 3)
+    public function getTopSellers($take = 10)
     {
         // Top Sellers
         $orderItems = OrderItem::select('sku_code', \DB::raw('count(*) as sku_count'))
@@ -542,7 +542,7 @@ class Shop
      * @param int $take
      * @return mixed
      */
-    public function getNewArrivals($take = 3)
+    public function getNewArrivals($take = 10)
     {
         $products = $this->productsPublicBaseQuery();
 
@@ -553,7 +553,7 @@ class Shop
      * @param int $take
      * @return mixed
      */
-    public function getBestRated($take = 3)
+    public function getBestRated($take = 10)
     {
         $products = $this->productsPublicBaseQuery();
 
