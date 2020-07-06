@@ -19,7 +19,7 @@
                     </div>
 
 
-                    <input type='hidden' name='checkoutToken' value='{{ csrf_token() }}'/>
+                    <input type='hidden' name='checkoutToken' value='{{ $subscription_reference  }}'/>
                     <input type='hidden' name='gateway' value='Bank'/>
                 </div>
 
